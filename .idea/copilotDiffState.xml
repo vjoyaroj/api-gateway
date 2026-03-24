@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="/application (snapshot).properties">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="/application (snapshot).properties" />
+              <option name="originalContent" value="spring.application.name=api-gateway&#10;spring.config.import=optional:configserver:http://localhost:8888&#10;" />
+              <option name="updatedContent" value="spring.application.name=api-gateway&#10;spring.config.import=optional:configserver:http://localhost:8888&#10;&#10;# Disable Eureka registration until server is available&#10;eureka.client.enabled=false&#10;&#10;# Gateway configuration&#10;spring.cloud.gateway.routes[0].id=fallback-route&#10;spring.cloud.gateway.routes[0].uri=http://localhost:8080&#10;spring.cloud.gateway.routes[0].predicates[0]=Path=/fallback&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
